@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-
         mAuth.signInWithEmailAndPassword(Mail,Pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(getApplicationContext(),"Failed "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-
                 }
 
             }

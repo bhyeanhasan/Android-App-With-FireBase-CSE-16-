@@ -2,17 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     android:gravity="center"
     tools:context=".body">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/TextAppearance.AppCompat.Body1"
-        android:text="B H Yean Hasan" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/tui"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ListView
+        android:id="@+id/list"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:divider="#ffffff"
+        android:dividerHeight="20dp"
+         />
 
 </LinearLayout>

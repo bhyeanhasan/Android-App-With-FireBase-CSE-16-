@@ -11,15 +11,13 @@
 
     <ProgressBar
 
-        android:progressBackgroundTint="#F6F4F8"
-        android:progressTint="#E91E63"
         android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-
-
+        android:layout_margin="30dp"
+        android:progressBackgroundTint="#F6F4F8"
+        android:progressTint="#E91E63"
         ></ProgressBar>
 
 </LinearLayout>

@@ -26,11 +26,13 @@ public class loading extends AppCompatActivity {
 
 
                 for (ii = 25; ii <= 100; ii += 25) {
-                    try {
-                        Thread.sleep(1000);
+                    try
+                    {
+                        Thread.sleep(500);
                         bar.setProgress(ii);
-
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e)
+                    {
                         e.printStackTrace();
                     }
 

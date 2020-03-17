@@ -6,51 +6,21 @@
     android:gravity="center"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="#ffffff"
     tools:context=".information">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Provide Your Information Carefully"
-        android:textColor="#009688"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="____________________________________________" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:padding="20dp"
-        android:layout_marginTop="20dp"
+        android:textColor="#673AB7"
+        android:textSize="22dp"
         android:gravity="center"
-        android:layout_height="wrap_content">
+        android:textStyle="bold" />
 
 
-        <EditText
-            android:id="@+id/id"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:hint="Your ID"
-            android:layout_marginRight="50dp"
-            android:inputType="numberPassword" />
 
-            />
 
-        <EditText
-            android:id="@+id/reg"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:hint="REG"
-            android:inputType="numberPassword" />
-        />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,29 +28,62 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
+        <EditText
+            android:id="@+id/reg"
+            android:layout_width="300dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            android:hint="REG No"
+            android:inputType="number"
+             />
+        />
+
 
         <EditText
             android:id="@+id/name"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginBottom="30dp"
             android:hint="Your Name"
+            android:inputType="text"
          />
 
         <EditText
             android:id="@+id/phone"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginBottom="30dp"
             android:hint="Your Phone No"
-            android:inputType="numberPassword" />
+            android:inputType="number"
+            />
 
         <EditText
             android:id="@+id/mail"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
             android:hint="Your Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+             />
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Birdhday      Date/Month/Year"
+            android:inputType="date"
+             />
+        <EditText
+            android:id="@+id/blood"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Blood"
+            android:inputType="text"
+            />
 
 
 
@@ -89,35 +92,20 @@
 
 
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+
+
 
 
         <Button
-            android:id="@+id/date"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:gravity="left"
-            android:text="Date of Birth"
-            android:textColor="#88525251"
-            android:textAllCaps="false"
-            android:textSize="18dp" />
-        />
-    </LinearLayout>
+            android:id="@+id/submit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="donow"
+            android:text="Submit" />
 
-    <Button
-        android:id="@+id/submit"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Submit" />
+    </LinearLayout>
 
 
 </LinearLayout>

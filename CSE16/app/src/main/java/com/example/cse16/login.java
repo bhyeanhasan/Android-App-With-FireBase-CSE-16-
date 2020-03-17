@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 public class login extends AppCompatActivity {
 
     private Button bt;
-    private EditText  boxmail,boxpassword;
+    private EditText  boxmail,boxpassword,idd;
     private FirebaseAuth mAuth;
 
     @Override
@@ -30,6 +30,7 @@ public class login extends AppCompatActivity {
 
         bt = findViewById(R.id.btn);
         boxmail = findViewById(R.id.email);
+        idd =findViewById(R.id.id);
         boxpassword = findViewById(R.id.pass);
         mAuth = FirebaseAuth.getInstance();
 
@@ -37,8 +38,9 @@ public class login extends AppCompatActivity {
     }
 
     public void doit(View view) {
-        String Mail = boxmail.getText().toString().trim();
+        final String Mail = boxmail.getText().toString().trim();
         String Pass = boxpassword.getText().toString().trim();
+        final String ID = idd.getText().toString().trim();
 
         if(Mail.isEmpty())
         {
@@ -71,8 +73,10 @@ public class login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Please Log in with your created account",Toast.LENGTH_SHORT).show();
 
                     Intent after = new Intent(login.this,information.class);
+                    after.putExtra("k",ID);
                     startActivity(after);
-                } else {
+                }
+                else {
 
                     if(task.getException() instanceof FirebaseAuthUserCollisionException)
                     {

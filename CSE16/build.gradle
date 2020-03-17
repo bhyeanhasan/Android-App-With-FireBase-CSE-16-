@@ -9,9 +9,9 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
         classpath 'com.google.gms:google-services:4.2.0'
-        classpath 'com.google.firebase:firebase-auth:19.2.0'
-        classpath 'com.google.firebase:firebase-storage:19.1.0'
-        classpath 'com.google.firebase:firebase-database:19.2.0'
+//        classpath 'com.google.firebase:firebase-auth:19.1.0'
+//        classpath 'com.google.firebase:firebase-storage:19.1.0'
+//        classpath 'com.google.firebase:firebase-database:19.1.0'
 
 
     }

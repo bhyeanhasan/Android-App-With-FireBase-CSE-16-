@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7C148F"
+    android:background="#ffffff"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
@@ -53,9 +53,14 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:onClick="newac"
         android:text="New Account" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© B H YEAN HASAN" />
 
 
 </LinearLayout>
